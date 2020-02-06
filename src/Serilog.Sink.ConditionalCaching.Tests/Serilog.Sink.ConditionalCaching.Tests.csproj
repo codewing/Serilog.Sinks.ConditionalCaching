@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <RootNamespace>Serilog.Sink.Cache.Tests</RootNamespace>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+        <PackageReference Include="Serilog" Version="2.11.0" />
+        <PackageReference Include="NUnit" Version="3.13.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Serilog.Sink.ConditionalCaching\Serilog.Sink.ConditionalCaching.csproj" />
+    </ItemGroup>
+
+</Project>
