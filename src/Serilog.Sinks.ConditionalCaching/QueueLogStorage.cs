@@ -29,7 +29,16 @@ namespace Serilog.Sinks.ConditionalCachedForwarder
 
         public void Clear()
         {
+            #if NET471
+            while (!_logCollection.IsEmpty)
+            {
+                _logCollection.TryDequeue(out _);
+            }
+            #endif
+            
+            #if NETSTANDARD2_1_OR_GREATER
             _logCollection.Clear();
+            #endif
         }
     }
 }
