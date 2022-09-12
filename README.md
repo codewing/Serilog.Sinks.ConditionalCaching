@@ -23,6 +23,19 @@ var Logger = new LoggerConfiguration()
     .CreateLogger();
 ```
 
+## Building / Test locally
+
+Run the following commands from inside the `.cake` directory.
+
+- Make sure the Cake build tool is installed:  
+    `dotnet tool restore`
+- Running tests:  
+    `dotnet cake .\build.cake --target=Test`
+- Building:  
+    `dotnet cake .\build.cake --target=Build --configuration=Debug`
+- Publishing:  
+    `dotnet cake .\build.cake --target=Publish`
+
 ## Notes
 
 Feedback and Pull Requests are generally welcome!

@@ -9,7 +9,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/codewing/Serilog.Sink.ConditionalCaching</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageIconUrl>https://raw.githubusercontent.com/codewing/Serilog.Sink.ConditionalCaching/master/Icon.png</PackageIconUrl>
+    <PackageIcon>icon.png</PackageIcon>
     <VersionPrefix>1.0.0</VersionPrefix>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
     <RootNamespace>Serilog.Sink.ConditionalCaching</RootNamespace>
@@ -19,6 +19,14 @@
 
   <ItemGroup>
     <PackageReference Include="Serilog" Version="2.11.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../icon.png" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
