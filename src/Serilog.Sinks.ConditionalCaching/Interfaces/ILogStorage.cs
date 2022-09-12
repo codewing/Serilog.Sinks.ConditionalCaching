@@ -1,4 +1,4 @@
-﻿namespace Serilog.Sink.ConditionalCachedForwarder
+﻿namespace Serilog.Sinks.ConditionalCachedForwarder
 {
     using Events;
 

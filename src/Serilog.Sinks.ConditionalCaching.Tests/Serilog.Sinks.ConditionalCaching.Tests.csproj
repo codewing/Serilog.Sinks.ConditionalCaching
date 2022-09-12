@@ -16,7 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Serilog.Sink.ConditionalCaching\Serilog.Sink.ConditionalCaching.csproj" />
+        <ProjectReference Include="..\Serilog.Sinks.ConditionalCaching\Serilog.Sinks.ConditionalCaching.csproj" />
     </ItemGroup>
 
 </Project>

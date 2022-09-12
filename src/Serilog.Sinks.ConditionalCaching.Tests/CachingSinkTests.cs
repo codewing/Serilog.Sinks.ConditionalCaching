@@ -1,4 +1,4 @@
-namespace Serilog.Sink.ConditionalCachedForwarder.Tests
+namespace Serilog.Sinks.ConditionalCachedForwarder.Tests
 {
     using System;
     using NUnit.Framework;
