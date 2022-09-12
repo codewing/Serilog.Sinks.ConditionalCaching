@@ -1,5 +1,7 @@
 # Serilog.Sink.ConditionalCaching
 
+![Nuget Version Badge](https://img.shields.io/nuget/v/Serilog.Sink.ConditionalCaching?style=for-the-badge)
+
 The goal of this sink is to provide an intermediate sink that can be activated or deactivated if needed.
 It uses a three state approach:
 
