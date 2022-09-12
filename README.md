@@ -1,4 +1,4 @@
-# Serilog.Sink.ConditionalCachedForwarder
+# Serilog.Sink.ConditionalCaching
 
 The goal of this sink is to provide an intermediate sink that can be activated or deactivated if needed.
 It uses a three state approach:
