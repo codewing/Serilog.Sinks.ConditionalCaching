@@ -48,7 +48,7 @@ Task("Publish")
             return;
         }
 
-        var pkgPath = GetFiles($"{solutionPath}/Serilog.Sink.ConditionalCaching/bin/Release/Serilog.Sink.ConditionalCaching.*.nupkg").First();
+        var pkgPath = GetFiles($"{solutionPath}/Serilog.Sinks.ConditionalCaching/bin/Release/Serilog.Sinks.ConditionalCaching.*.nupkg").First();
         
         if (string.IsNullOrEmpty(nugetApiKey))
         {
