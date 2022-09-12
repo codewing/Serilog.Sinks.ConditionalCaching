@@ -1,5 +1,5 @@
 // Addins
-#tool "nuget:?package=NUnit.ConsoleRunner"
+#tool "nuget:?package=NUnit.ConsoleRunner&version=3.15.2"
 
 var solutionPath = "../src";
 
@@ -42,7 +42,13 @@ Task("Publish")
     .IsDependentOn("Test")
     .Does(() => 
     {
-        var pkgPath = GetFiles($"./**/bin/Release/*{versionSuffix ?? string.Empty}.nupkg").First();
+        if(buildType != "Release")
+        {
+            Error("Can only publish release builds");
+            return;
+        }
+
+        var pkgPath = GetFiles($"{solutionPath}/Serilog.Sink.ConditionalCaching/bin/Release/Serilog.Sink.ConditionalCaching.*.nupkg").First();
         
         if (string.IsNullOrEmpty(nugetApiKey))
         {
