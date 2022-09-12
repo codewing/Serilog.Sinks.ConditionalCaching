@@ -34,10 +34,10 @@ namespace Serilog.Sinks.ConditionalCachedForwarder
             {
                 _logCollection.TryDequeue(out _);
             }
-            #endif
-            
-            #if NETSTANDARD2_1_OR_GREATER
+            #elif NETSTANDARD2_1_OR_GREATER
             _logCollection.Clear();
+            #else
+            #error unsupported platform
             #endif
         }
     }
